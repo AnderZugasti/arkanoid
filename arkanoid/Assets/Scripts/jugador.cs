@@ -5,7 +5,7 @@ using UnityEngine;
 public class jugador : MonoBehaviour
 {
     
-    public float velocidad = 10f;
+    public float velocidad = 20f;
     private Rigidbody2D rb;
 
     
