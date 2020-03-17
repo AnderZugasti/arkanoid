@@ -5,15 +5,20 @@ using UnityEngine;
 public class jugador : MonoBehaviour
 {
     
-    public float velocidad = 20f;
-    private Rigidbody2D rb;
+    public float velocidad = 30f;
+    //private Rigidbody2D rb;
+   
 
-    
 
     // Start is called before the first frame update
     void Awake ()
     {
-        rb = GetComponent<Rigidbody2D>();
+       // rb = GetComponent<Rigidbody2D>();
+    }
+    void Start()
+    {
+        
+        
     }
 
     // Update is called once per frame
