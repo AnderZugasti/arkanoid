@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class jugador : MonoBehaviour
 {
-    
-    public float velocidad = 30f;
+    public int Score = 0;
+    private Text txtScore;
+    public float velocidad = 40f;
+    public GameObject puntuacion;
     //private Rigidbody2D rb;
-   
+
 
 
     // Start is called before the first frame update
@@ -15,10 +19,11 @@ public class jugador : MonoBehaviour
     {
        // rb = GetComponent<Rigidbody2D>();
     }
+    
     void Start()
     {
-        
-        
+       txtScore = puntuacion.GetComponent<Text>();
+
     }
 
     // Update is called once per frame
@@ -55,5 +60,9 @@ public class jugador : MonoBehaviour
                 transform.position = new Vector2(limiteIzq, transform.position.y);
             }
         }
+        
+            txtScore.text = "Puntuacion: " + Score;
+        
     }
+    
 }
