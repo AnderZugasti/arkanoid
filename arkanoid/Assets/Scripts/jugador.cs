@@ -8,8 +8,13 @@ public class jugador : MonoBehaviour
 {
     public int Score = 0;
     private Text txtScore;
-    public float velocidad = 40f;
+    private Text lvlUp;
+    public float velocidad = 60f;
     public GameObject puntuacion;
+    public GameObject lvlup;
+    private int marca = 9000;
+    public GameObject bola;
+    public Vector2 posicionInicial;
     //private Rigidbody2D rb;
 
 
@@ -23,6 +28,8 @@ public class jugador : MonoBehaviour
     void Start()
     {
        txtScore = puntuacion.GetComponent<Text>();
+       lvlUp = lvlup.GetComponent<Text>();
+       posicionInicial = bola.transform.position;
 
     }
 
@@ -61,7 +68,14 @@ public class jugador : MonoBehaviour
             }
         }
         
-            txtScore.text = "Puntuacion: " + Score;
+            txtScore.text = "Puntuación: " + Score;
+            if (Score >= marca)
+        {
+            lvlUp.text = "Nivel 1 superado";
+            bola.transform.position = posicionInicial;
+        }
+        
+        
         
     }
     
