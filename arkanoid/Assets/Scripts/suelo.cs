@@ -15,6 +15,8 @@ public class suelo : MonoBehaviour
     private int vidas = 3;
     private Text gameOvertxt;
     public GameObject over;
+    public GameObject SonidoCaida;
+    public GameObject SonidoFinal;
     
    
     void Start()
@@ -30,18 +32,24 @@ public class suelo : MonoBehaviour
             bola.transform.position = posicionInicial;
             bola.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             b.AddForce(Vector2.up * fuerza, ForceMode2D.Impulse);
+            
             if (vidas == 3)
             {
                 Destroy(vida1);
                 vidas = 2;
-            }else if(vidas == 2)
+                Instantiate(SonidoCaida);
+            }
+            else if(vidas == 2)
             {
                 Destroy(vida2);
                 vidas = 1;
-            }else if(vidas == 1)
+                Instantiate(SonidoCaida);
+            }
+            else if(vidas == 1)
             {
                 Destroy(vida3);
                 vidas = 0;
+                Instantiate(SonidoFinal);
             }
         }
     }

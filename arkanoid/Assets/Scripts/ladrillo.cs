@@ -9,7 +9,7 @@ public class ladrillo : MonoBehaviour
 {
     public GameObject bola;
     private GameObject jugador;
-   
+    public GameObject SonidoRoto;
     
     
     // Start is called before the first frame update
@@ -27,10 +27,12 @@ public class ladrillo : MonoBehaviour
     {
         if (other.gameObject.tag == "bola")
         {
+            
             jugador.GetComponent<jugador>().Score += 100;
             Destroy(gameObject);
-            
-            
+            Instantiate(SonidoRoto);
+
+
         }
     }
 }
