@@ -12,7 +12,7 @@ public class jugador : MonoBehaviour
     public float velocidad = 60f;
     public GameObject puntuacion;
     public GameObject lvlup;
-    private int marca = 9000;
+    private int marca1 = 100;
     public GameObject bola;
     public Vector2 posicionInicial;
     //private Rigidbody2D rb;
@@ -37,8 +37,8 @@ public class jugador : MonoBehaviour
     void Update()
     {
         float distanciaHorizontal = Camera.main.orthographicSize * Screen.width / Screen.height;
-        float limiteIzq = -1.0f * distanciaHorizontal;
-        float limiteDer = 1.0f * distanciaHorizontal;
+        float limiteIzq = -6.7f;
+        float limiteDer = 6.7f;
         if (Input.GetKey(KeyCode.LeftArrow))
         {
 
@@ -69,7 +69,7 @@ public class jugador : MonoBehaviour
         }
         
             txtScore.text = "Puntuación: " + Score;
-            if (Score >= marca)
+            if (Score >= marca1)
         {
             lvlUp.text = "Nivel 1 superado";
             bola.transform.position = posicionInicial;

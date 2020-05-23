@@ -10,9 +10,9 @@ public class creadorLadrillos : MonoBehaviour
     // Referencia para guardar una matriz de objetos
     private Rigidbody2D[,] ladrillos;
 
-    private const int FILAS = 6;
+    private const int FILAS = 3;
     private const int COLUMNAS = 15;
-
+    
     // Enumeración para expresar el sentido del movimiento
     private enum direccion { IZQ, DER };
 
@@ -77,4 +77,5 @@ public class creadorLadrillos : MonoBehaviour
         }
 
     }
+    
 }
