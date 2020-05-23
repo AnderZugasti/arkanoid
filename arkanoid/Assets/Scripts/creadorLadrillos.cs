@@ -15,7 +15,7 @@ public class creadorLadrillos : MonoBehaviour
     
     // Enumeración para expresar el sentido del movimiento
     private enum direccion { IZQ, DER };
-
+    
     
 
     // Límites de la pantalla
@@ -40,7 +40,7 @@ public class creadorLadrillos : MonoBehaviour
     {
         
     }
-    void generarLadrillos(int filas, int columnas, float espacioH, float espacioV, float escala = 1.0f)
+    public void generarLadrillos(int filas, int columnas, float espacioH, float espacioV, float escala = 1.0f)
     {
         /* Creamos una rejilla de aliens a partir del punto de origen
 		 * 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+
 public class jugador : MonoBehaviour
 {
     public int Score = 0;
@@ -13,10 +14,12 @@ public class jugador : MonoBehaviour
     public GameObject puntuacion;
     public GameObject lvlup;
     private int marca1 = 100;
+    private int marca2 = 700;
     public GameObject bola;
     public Vector2 posicionInicial;
     //private Rigidbody2D rb;
-
+    private GameObject lvl2;
+    int cont = 0;
 
 
     // Start is called before the first frame update
@@ -30,6 +33,8 @@ public class jugador : MonoBehaviour
        txtScore = puntuacion.GetComponent<Text>();
        lvlUp = lvlup.GetComponent<Text>();
        posicionInicial = bola.transform.position;
+        lvlUp.text = "Nivel 1 ";
+        lvl2 = GameObject.Find("GameObject");
 
     }
 
@@ -69,14 +74,21 @@ public class jugador : MonoBehaviour
         }
         
             txtScore.text = "Puntuación: " + Score;
-            if (Score >= marca1)
+            
+            if (Score == marca1 && cont ==0)
         {
-            lvlUp.text = "Nivel 1 superado";
-            bola.transform.position = posicionInicial;
+            lvlUp.text = "Nivel 2";
+            cont = 1;
+            lvl2.GetComponent<creadorLadrillos>().generarLadrillos(5,15,0.7f,0.6f);
         }
-        
-        
-        
+        if (Score == marca2 && cont == 1)
+        {
+            lvlUp.text = "Nivel 3";
+            cont = 2;
+            lvl2.GetComponent<creadorLadrillos>().generarLadrillos(7, 15, 0.7f, 0.6f);
+        }
+
+
     }
     
 }
