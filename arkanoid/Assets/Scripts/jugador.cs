@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 
 
+
 public class jugador : MonoBehaviour
 {
     public int Score = 0;
@@ -13,13 +14,16 @@ public class jugador : MonoBehaviour
     public float velocidad = 60f;
     public GameObject puntuacion;
     public GameObject lvlup;
-    private int marca1 = 100;
-    private int marca2 = 700;
+    private int marca1 = 4500;
+    private int marca2 = 12000;
+    private int marca3 = 22500;
     public GameObject bola;
     public Vector2 posicionInicial;
     //private Rigidbody2D rb;
     private GameObject lvl2;
     int cont = 0;
+    public direccion izquierda;
+    public direccion derecha;
 
 
     // Start is called before the first frame update
@@ -44,7 +48,7 @@ public class jugador : MonoBehaviour
         float distanciaHorizontal = Camera.main.orthographicSize * Screen.width / Screen.height;
         float limiteIzq = -6.7f;
         float limiteDer = 6.7f;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (izquierda.pulsado)
         {
 
             // Nos movemos a la izquierda hasta llegar al límite para entrar por el otro lado
@@ -59,7 +63,7 @@ public class jugador : MonoBehaviour
         }
 
         // Tecla: Derecha
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (derecha.pulsado)
         {
 
             // Nos movemos a la derecha hasta llegar al límite para entrar por el otro lado
@@ -87,8 +91,13 @@ public class jugador : MonoBehaviour
             cont = 2;
             lvl2.GetComponent<creadorLadrillos>().generarLadrillos(7, 15, 0.7f, 0.6f);
         }
+        if (Score == marca3 && cont == 2)
+        {
+            lvlUp.text = "Congratulations";
+        }
 
 
     }
+    
     
 }

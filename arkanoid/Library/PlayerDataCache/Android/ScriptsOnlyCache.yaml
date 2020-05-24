@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - bola
     - botones
     - creadorLadrillos
+    - direccion
     - jugador
     - ladrillo
     - suelo
@@ -46,21 +47,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12702}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -78,6 +79,23 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Puntuacion.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -111,25 +129,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12066}
     - Class: 114
-      Script: {instanceID: 12488}
+      Script: {instanceID: 12082}
     - Class: 114
-      Script: {instanceID: 12702}
+      Script: {instanceID: 12490}
     - Class: 114
-      Script: {instanceID: 12998}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13000}
+    - Class: 114
+      Script: {instanceID: 13090}
+    - Class: 114
+      Script: {instanceID: 13736}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -379,7 +401,7 @@ ScriptsOnlyBuild:
     className: ladrillo
   - hash:
       serializedVersion: 2
-      Hash: 1e1e3736d8450e0e0e71e1cd2e17d9d2
+      Hash: 56e288ee95f32af76b199e01c6237984
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: jugador
@@ -611,8 +633,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a4620626c760909c313bb25cc7b17fca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: direccion
   platform: 13
   scenePathNames:
   - Assets/Scenes/Inicio.unity
   - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Puntuacion.unity
   playerPath: C:/Users/ander/Desktop/prueba android/app.apk

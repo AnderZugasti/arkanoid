@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class botones : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     public void empezar()
     {
         SceneManager.LoadScene("SampleScene");
     }
+    
 }
