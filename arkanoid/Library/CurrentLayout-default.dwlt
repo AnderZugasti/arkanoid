@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 127
+  controlID: 66
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 61
+  controlID: 67
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 62
+  controlID: 68
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ander\Desktop\arkanoid\arkanoid
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80350000
-    m_LastClickedID: 13696
-    m_ExpandedIDs: 00000000763500008235000000ca9a3b
+    m_SelectedIDs: 6a350000
+    m_LastClickedID: 13674
+    m_ExpandedIDs: 000000006a35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000076350000
+    m_ExpandedIDs: 000000006a350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000fe330000be35000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -502,23 +502,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 9a97ffffac97ffffae97ffffb297ffffb697ffff2c98ffff3e98ffff4098ffff4498ffff4898ffff1699ffff2899ffff2a99ffff2e99ffff3299ffff1c9affff2e9affffc69affffca9affffd29affffd69effffe89effffea9effffee9efffff29effff989fffffaa9fffff42a0ffff46a0ffff4ea0ffff24a3ffff36a3ffffcea3ffffd2a3ffffdaa3ffff6ca9ffff7ea9ffff16aaffff1aaaffff22aaffff66b8ffffaab8ffffe0b8ffff8abbffff9cbbffff38bcffff44bcffff60fbffff1a3400004834000058340000d03e00005c3f00006c3f0000504400006044000054490000d84c00007a4f0000ee5200009055000032580000
+      m_SelectedIDs: 92350000
+      m_LastClickedID: 13714
+      m_ExpandedIDs: a6faffff6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: izquierda
-        m_OriginalName: izquierda
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1706
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.2307582, y: 2.3595946, z: -154.72662}
+    m_Target: {x: 266.19415, y: 213.12111, z: -230.78865}
     speed: 2
-    m_Value: {x: 2.2307582, y: 2.3595946, z: -154.72662}
+    m_Value: {x: 262.18616, y: 216.51248, z: -229.44914}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.449673
+    m_Target: 355.73575
     speed: 2
-    m_Value: 17.449673
+    m_Value: 372.49817
   m_Ortho:
     m_Target: 1
     speed: 2
