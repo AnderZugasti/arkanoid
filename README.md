@@ -4,7 +4,7 @@ arkanoid Ander Zugasti
 
 _El Arkanoid survival es el juego del arkanoid normal, solo que se tienen tres vidas para pasarse los tres niveles_
 
-##Pantalla de inicio 
+## Pantalla de inicio 
 
 _La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y el titulo_
 <img src="imagenes/imagen arkanoid inicio.png" />
@@ -28,7 +28,7 @@ velocidad que al incio y se perdera una vida
 
 _Cuando se pierdan todas las vidas apareceran dos opciones para seleccionar:_
 <img src="imagenes/final de partida.png" />
-####Reiniciar:
+#### Reiniciar:
 _Nos permite reiniciar la partida_
 ####Puntuación:
 _Nos lleva a la pantalla de puntuaciones donde veremos la clasificación_
@@ -38,15 +38,15 @@ _En esta pantalla tendremos tres partes:_
 
 <img src="imagenes/puntuacion.png" />
 
-####Boton Reinicio
+#### Boton Reinicio
 
 _Nos permite reiniciar el juego_
 
-####Ranking
+#### Ranking
 
 _Veremos como esta el ranking del juego_
 
-####Guardar
+#### Guardar
 
 _Nos da la posivilidad de guaradar el juego_
 
