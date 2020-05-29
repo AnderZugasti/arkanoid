@@ -48,5 +48,14 @@ _Veremos como esta el ranking del juego_
 
 #### Guardar
 
-_Nos da la posivilidad de guaradar el juego_
+_Nos da la posibilidad de guardar el nuestra puntuación con un nick_
+
+# Problemas 
+_En primer lugar tengo que decir que primero hice un juego que funcionaba to todo bien, hasta que incorpore la base de datos firebase, la cual me fastidio todo lo que habia planteado y tube que volver a hacer cazsi todo el proyecto._
+
+```Con Esto llega mi segundo problema, que me ha comido muchas horas``` 
+_Al tener que generar un objeto que pase de una escena a otra, he generado si querer una variable indestructible, a la que le da igual el valor que le asignes, y sumara la puntuacón que consiga el usuario hasta que este cierre el juego._
+
+```El gran problema es que esa puntación es la que se guarda en la base de datos```
+
 
