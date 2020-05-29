@@ -7,7 +7,7 @@ _El Arkanoid survival es el juego del arkanoid normal, solo que se tienen tres v
 ##Pantalla de inicio 
 
 _La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y el titulo_
-<img src="imagen arkanoid inicio.png" />
+<img src="imagenes/imagen arkanoid inicio.png" />
 
 
 
@@ -17,10 +17,11 @@ _La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y e
 _Segun se entra en la partida la bola se empieza a desplazar._
 
 ```
-En caso de estar en el ordenador se manejara con las direcciones derecha e izquierda del teclado, y en el movil pulsando en cada lado de la pantalla
+En caso de estar en el ordenador se manejara con las direcciones derecha e izquierda del teclado,
+y en el movil pulsando en cada lado de la pantalla
 ```
 ![](gif juego.mp4)
-### Instalación 
+### Pantalla puntuación
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
