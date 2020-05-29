@@ -7,7 +7,7 @@ _El Arkanoid survival es el juego del arkanoid normal, solo que se tienen tres v
 ##Pantalla de inicio 
 
 _La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y el titulo_
-<img src="imagen arkanoid inicio" />
+<img src="imagen arkanoid inicio.png" />
 
 
 
