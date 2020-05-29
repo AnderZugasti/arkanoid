@@ -152,9 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   marcador: {fileID: 876375194}
   puntosJugador: {fileID: 873634567}
-  nick: {fileID: 351384070}
+  nick: {fileID: 0}
   textRepe: {fileID: 41789858}
   guardar: {fileID: 309251917}
+  inputField: {fileID: 1394883482}
 --- !u!4 &17730568
 Transform:
   m_ObjectHideFlags: 0
@@ -723,7 +724,7 @@ GameObject:
   - component: {fileID: 322972722}
   - component: {fileID: 322972721}
   m_Layer: 5
-  m_Name: nombre
+  m_Name: inputNombre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,8 +955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef377895ab23f1c4291fb1861bc7d664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nick: 
-  inputField: {fileID: 322972720}
   rank: {fileID: 17730566}
 --- !u!4 &351384072
 Transform:

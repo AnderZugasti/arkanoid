@@ -16,17 +16,18 @@ public class Ranking : MonoBehaviour
     private puntuacionFinal jugador;
     private int score;
     public GameObject puntosJugador;
-    public GameObject nick;
+    public Text nick;
     List<string> nicks = new List<string>();
     private bool repe = false;
     public GameObject textRepe;
     public GameObject  guardar;
+    public GameObject inputField;
     // Start is called before the first frame update
     void Start()
     {
         jugador = FindObjectOfType<puntuacionFinal>();
         score = jugador.puntos;
-        puntosJugador.GetComponent<TextMeshProUGUI>().text =$" {score}";
+        puntosJugador.GetComponent<TextMeshProUGUI>().text =$" {score} puntos";
         textRepe.SetActive(false);
             
         
@@ -43,6 +44,7 @@ public class Ranking : MonoBehaviour
                 Dictionary<string, object> jugador = documentSnapshot.ToDictionary();
                 top5 += $"{cont}-{documentSnapshot.Id}..........{jugador["puntos"]}\n";
                 cont += 1;
+                nicks.Add(documentSnapshot.Id);
             }
             marcador.GetComponent<TextMeshProUGUI>().text = top5;
         });
@@ -56,21 +58,25 @@ public class Ranking : MonoBehaviour
     }
     public void guardarNombre()
     {
+        nick = GameObject.Find("inputNick").GetComponent<Text>();
+
+        Debug.Log(nick);
        
-        var nombre = nick.GetComponent<guardar>().nick;
-        if (!nombre.Equals(""))
-        {
             foreach (var nic in nicks)
             {
-                if (nombre.Equals(nic))
+            Debug.Log("entra en el for each");
+            if (nick.text.Equals(nic))
                 {
                     repe = true;
                 }
                 else
                 {
-                    DocumentReference docref = db.Collection("jugadores").Document();
-                    var datos = new Dictionary<string, int>();
-                    datos.Add(nombre, score);
+                Debug.Log("entrapara meter datos");
+                DocumentReference docref = db.Collection("jugadores").Document(nick.text);
+                var datos = new Dictionary<string,object> {
+                        {"puntos", score }
+                    };
+                    
                     docref.SetAsync(datos);
                     guardar.SetActive(false);
 
@@ -84,6 +90,6 @@ public class Ranking : MonoBehaviour
             }
 
 
-        }
+        
     }
 }
