@@ -20,7 +20,7 @@ _Segun se entra en la partida la bola se empieza a desplazar._
 En caso de estar en el ordenador se manejara con las direcciones derecha e izquierda del teclado,
 y en el movil pulsando en cada lado de la pantalla
 ```
-![](juego.gif)
+![](imagenes/juego.gif)
 ### Pantalla puntuación
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
