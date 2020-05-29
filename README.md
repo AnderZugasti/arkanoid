@@ -30,13 +30,13 @@ _Cuando se pierdan todas las vidas apareceran dos opciones para seleccionar:_
 <img src="imagenes/final de partida.png" />
 #### Reiniciar:
 _Nos permite reiniciar la partida_
-####Puntuación:
+#### Puntuación:
 _Nos lleva a la pantalla de puntuaciones donde veremos la clasificación_
 ## Pantalla puntuación
 
 _En esta pantalla tendremos tres partes:_
 
-<img src="imagenes/puntuacion.png" />
+<img src="imagenes/puntuacion.png"/>
 
 #### Boton Reinicio
 
