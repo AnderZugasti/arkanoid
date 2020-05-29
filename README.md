@@ -2,11 +2,11 @@
 arkanoid Ander Zugasti
 # Arkanoid Survival
 
-_El Arkanoid survival es el juego del arkanoid normal, solo que se tienen tres vidas para pasarse los tres niveles_
+El Arkanoid survival es el juego del arkanoid normal, solo que se tienes tres vidas para pasarse los tres niveles
 
 ## Pantalla de inicio 
 
-_La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y el titulo_
+La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y el titulo
 <img src="imagenes/imagen arkanoid inicio.png" />
 
 
@@ -14,11 +14,11 @@ _La pantalla de inicio es muy simple tan solo tenemos el botón para empezar y e
 
 ## Pantalla de juego 
 
-_Segun se entra en la partida la bola se empieza a desplazar._
+Segun se entra en la partida la bola se empieza a desplazar.
 
 ```
 En caso de estar en el ordenador se manejara con las direcciones derecha e izquierda del teclado,
-y en el movil pulsando en cada lado de la pantalla
+y en el móvil pulsando en cada lado de la pantalla
 ```
 ![](imagenes/juego.gif)
 ```
@@ -31,10 +31,10 @@ _Cuando se pierdan todas las vidas apareceran dos opciones para seleccionar:_
 #### Reiniciar:
 _Nos permite reiniciar la partida_
 #### Puntuación:
-_Nos lleva a la pantalla de puntuaciones donde veremos la clasificación_
+_Nos lleva a la pantalla de puntuaciones, donde veremos la clasificación_
 ## Pantalla puntuación
 
-_En esta pantalla tendremos tres partes:_
+En esta pantalla tendremos tres partes:
 
 <img src="imagenes/puntuacion.png"/>
 
@@ -48,5 +48,15 @@ _Veremos como esta el ranking del juego_
 
 #### Guardar
 
-_Nos da la posivilidad de guaradar el juego_
+_Nos da la posibilidad de guardar el nuestra puntuación con un nick_
+
+# Problemas 
+En primer lugar tengo que decir que primero hice un juego que funcionaba todo bien, hasta que incorpore la base de datos firebase, la cual me fastidio todo lo que habia planteado y tuve que volver a hacer casi todo el proyecto.
+
+```Con Esto llega mi segundo problema, que me ha comido muchas horas```
+
+_Al tener que generar un objeto que pase de una escena a otra, he generado sin querer una variable indestructible, a la que le da igual el valor que le asignes, ya que sumara la puntuación que consiga el usuario hasta que este cierre el juego._
+
+```El gran problema es que esa puntación es la que se guarda en la base de datos```
+
 
