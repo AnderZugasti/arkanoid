@@ -144,5 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 6625825133817168761, guid: a930a3b6b51ae664b956c1f6aad1070d, type: 3}
+  puntoscant: {fileID: 2050726018571561968, guid: 03284cefa756cb94f9e12be22da3b24d,
+    type: 3}
   SonidoRoto: {fileID: 6573857008463334707, guid: 087dd3ecd33938949a06278a63976e47,
     type: 3}
+  puntos: {fileID: 4415091271806544075, guid: 0c1d48fd9b9ea9648aedfcfeda6f65a8, type: 3}

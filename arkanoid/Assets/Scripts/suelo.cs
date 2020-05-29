@@ -17,6 +17,7 @@ public class suelo : MonoBehaviour
     public GameObject over;
     public GameObject SonidoCaida;
     public GameObject SonidoFinal;
+    public GameObject fin;
     
    
     void Start()
@@ -24,6 +25,8 @@ public class suelo : MonoBehaviour
         posicionInicial = bola.transform.position;
         gameOvertxt = over.GetComponent<Text>();
         posicionInicial = bola.transform.position;
+        fin.SetActive(false);
+
     }
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -61,6 +64,7 @@ public class suelo : MonoBehaviour
         {
             gameOvertxt.text = "Game\nOver";
             bola.transform.position = posicionInicial;
+            fin.SetActive(true);
         }
     }
 }

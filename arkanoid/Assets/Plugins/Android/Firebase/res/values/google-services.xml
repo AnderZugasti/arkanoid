@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://arkanoidsurvival.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">127103215547</string>
+  <string name="google_storage_bucket" translatable="false">arkanoidsurvival.appspot.com</string>
+  <string name="project_id" translatable="false">arkanoidsurvival</string>
+  <string name="google_api_key" translatable="false">AIzaSyDp2cyLG9nqNp8Fe_-qejC3l31wDSfD1rw</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDp2cyLG9nqNp8Fe_-qejC3l31wDSfD1rw</string>
+  <string name="google_app_id" translatable="false">1:127103215547:android:e51ba04a693a6b54b1869e</string>
+  <string name="default_web_client_id" translatable="false">127103215547-jhrubkptsjvrca4s7j00oiqav1nl9f19.apps.googleusercontent.com</string>
+</resources>

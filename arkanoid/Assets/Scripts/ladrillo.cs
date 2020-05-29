@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static jugador;
+
 
 
 public class ladrillo : MonoBehaviour
 {
     public GameObject bola;
-    private GameObject jugador;
+    public GameObject puntoscant;
     public GameObject SonidoRoto;
-    
+    private GameObject jugador;
     
     // Start is called before the first frame update
     void Start()
     {
-        jugador =GameObject.Find("jugador");
+        jugador = GameObject.Find("jugador");  
     }
 
     // Update is called once per frame
@@ -27,8 +27,8 @@ public class ladrillo : MonoBehaviour
     {
         if (other.gameObject.tag == "bola")
         {
-            
             jugador.GetComponent<jugador>().Score += 100;
+            puntoscant.GetComponent<puntuacionFinal>().puntos += 100;
             Destroy(gameObject);
             Instantiate(SonidoRoto);
 

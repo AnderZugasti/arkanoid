@@ -11,6 +11,7 @@ public class jugador : MonoBehaviour
     public int Score = 0;
     private Text txtScore;
     private Text lvlUp;
+    private GameObject puntJug;
     public float velocidad = 60f;
     public GameObject puntuacion;
     public GameObject lvlup;
@@ -22,33 +23,55 @@ public class jugador : MonoBehaviour
     //private Rigidbody2D rb;
     private GameObject lvl2;
     int cont = 0;
-    public direccion izquierda;
-    public direccion derecha;
+    bool izquierda = false;
+    bool derecha = false;
+    
 
 
     // Start is called before the first frame update
     void Awake ()
     {
-       // rb = GetComponent<Rigidbody2D>();
+       
     }
     
     void Start()
     {
+        
        txtScore = puntuacion.GetComponent<Text>();
        lvlUp = lvlup.GetComponent<Text>();
        posicionInicial = bola.transform.position;
         lvlUp.text = "Nivel 1 ";
         lvl2 = GameObject.Find("GameObject");
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if (Input.touchCount > 0)
+        {
+            var ultimo = Input.touchCount;
+            Touch toque = Input.GetTouch(ultimo);
+            Vector3 posiciontouch = Camera.main.ScreenToWorldPoint(toque.position);
+            if (posiciontouch.x < 0)
+            {
+                derecha = false;
+                izquierda = true;
+               
+            }
+            if(posiciontouch.x > 0)
+            {
+                izquierda = false;
+                derecha = true;
+
+            }
+
+        }
         float distanciaHorizontal = Camera.main.orthographicSize * Screen.width / Screen.height;
         float limiteIzq = -6.7f;
         float limiteDer = 6.7f;
-        if (izquierda.pulsado)
+        if (izquierda || Input.GetKey(KeyCode.LeftArrow))
         {
 
             // Nos movemos a la izquierda hasta llegar al límite para entrar por el otro lado
@@ -63,7 +86,7 @@ public class jugador : MonoBehaviour
         }
 
         // Tecla: Derecha
-        if (derecha.pulsado)
+        if (derecha || Input.GetKey(KeyCode.RightArrow))
         {
 
             // Nos movemos a la derecha hasta llegar al límite para entrar por el otro lado
