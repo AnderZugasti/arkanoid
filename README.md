@@ -21,9 +21,27 @@ En caso de estar en el ordenador se manejara con las direcciones derecha e izqui
 y en el movil pulsando en cada lado de la pantalla
 ```
 ![](imagenes/juego.gif)
-### Pantalla puntuación
+```
+Cada ladrillo puntuara 100 puntos, cuando la bola caiga al suelo, esta se lanzara de nuevo a la misma 
+velocidad que al incio y se perdera una vida
+```
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Cuando se pierdan todas las vidas apareceran dos opciones para seleccionar:_
+<img src="imagenes/final de partida.png" />
+####Reiniciar:
+_Nos permite reiniciar la partida_
+####Puntuación:
+_Nos lleva a la pantalla de puntuaciones donde veremos la clasificación_
+## Pantalla puntuación
+
+_En esta pantalla tendremos tres partes:_
+<img src="imagenes/puntuacion.png" />
+####Boton Reinicio
+_Nos permite reiniciar el juego_
+####Ranking
+_Veremos como esta el ranking del juego_
+####Guardar
+_Nos da la posivilidad de guaradar el juego_
 
 _Dí cómo será ese paso_
 
