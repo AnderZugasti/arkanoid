@@ -35,16 +35,18 @@ _Nos lleva a la pantalla de puntuaciones donde veremos la clasificación_
 ## Pantalla puntuación
 
 _En esta pantalla tendremos tres partes:_
+
 <img src="imagenes/puntuacion.png" />
+
 ####Boton Reinicio
+
 _Nos permite reiniciar el juego_
+
 ####Ranking
+
 _Veremos como esta el ranking del juego_
+
 ####Guardar
+
 _Nos da la posivilidad de guaradar el juego_
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
